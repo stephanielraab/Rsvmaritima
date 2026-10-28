@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RSV Consultoria Naval, Marítima e Portuária: manobras portuárias, segurança operacional, engenharia naval, treinamentos e consultoria.">
+  <title>RSV Consultoria Naval, Marítima e Portuária</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+</head>
+<body>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO -->
+  <header class="topo" id="topo">
+    <div class="container topo-interno">
+      <a class="marca" href="#inicio" aria-label="Início RSV">
+        <img src="logo-rsv.png" alt="Logo RSV Consultoria">
+      </a>
+
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">&#9776;</button>
+
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#missao">Missão e visão</a>
+        <a href="#valores">Valores</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#curso">Curso</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn-verde btn-sm" id="menu-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- TOPO -->
+    <section class="hero" id="inicio">
+      <img class="hero-img" src="images/hero-offshore.png" alt="Plataforma offshore e navio ao fundo">
+      <div class="hero-sombra"></div>
+      <div class="container hero-conteudo">
+        <p class="kicker" id="hero-kicker"></p>
+        <h1 id="hero-titulo"></h1>
+        <p class="hero-texto" id="hero-texto"></p>
+        <div class="hero-botoes">
+          <a class="btn btn-verde" href="#servicos">Ver serviços</a>
+          <a class="btn btn-claro" id="hero-whats" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="secao" id="servicos">
+      <div class="container">
+        <h2 class="titulo-secao">Serviços</h2>
+        <p class="intro">Áreas de atuação da RSV, da manobra portuária ao treinamento de equipes.</p>
+        <div class="grid-servicos" id="servicos-lista"></div>
+      </div>
+    </section>
+
+    <!-- MISSÃO E VISÃO -->
+    <section class="secao alt" id="missao">
+      <div class="container">
+        <h2 class="titulo-secao">Missão e visão</h2>
+        <p class="intro">Os princípios que orientam a atuação da RSV no setor marítimo e portuário.</p>
+        <div class="grid-2">
+          <article class="card missao-card reveal">
+            <h3>Missão</h3>
+            <p id="missao-texto"></p>
+          </article>
+          <article class="card missao-card reveal">
+            <h3>Visão</h3>
+            <p id="visao-texto"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALORES -->
+    <section class="secao" id="valores">
+      <div class="container">
+        <h2 class="titulo-secao">Valores</h2>
+        <p class="intro">Os princípios que orientam o trabalho da RSV em cada operação.</p>
+        <div class="grid-valores" id="valores-lista"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE O COMANDANTE -->
+    <section class="secao alt" id="sobre">
+      <div class="container grid-sobre">
+        <img class="foto-perfil reveal" id="sobre-foto" src="images/ricardo-vieira.jpg" alt="">
+        <div class="reveal">
+          <p class="kicker">Sobre o comandante</p>
+          <h2 id="sobre-nome"></h2>
+          <p id="sobre-texto"></p>
+          <h3 class="sobre-subtitulo">Acompanhe nas redes sociais</h3>
+          <div class="redes redes-claras" id="sobre-redes"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURSO -->
+    <section class="secao escuro" id="curso">
+      <div class="container">
+        <p class="kicker">Treinamentos</p>
+        <h2 class="titulo-secao" id="curso-titulo"></h2>
+        <p id="curso-texto"></p>
+        <ul class="lista-destaques" id="curso-destaques"></ul>
+        <a class="btn btn-verde" id="curso-botao" target="_blank" rel="noopener">Quero informações sobre o curso</a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="secao" id="contato">
+      <div class="container grid-contato">
+        <div>
+          <h2 class="titulo-secao">Contato</h2>
+          <p class="intro">Fale com a RSV pelo WhatsApp, pelo e-mail ou pelo formulário.</p>
+          <div id="contato-whatsapp"></div>
+          <a class="contato-item" id="contato-email"></a>
+        </div>
+
+        <form class="form" id="contato-form" action="contato.php" method="post" novalidate>
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required maxlength="120" autocomplete="name">
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required maxlength="150" autocomplete="email">
+          </div>
+          <div class="campo">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" maxlength="40" autocomplete="tel">
+          </div>
+          <div class="campo">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto"></select>
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required maxlength="5000"></textarea>
+          </div>
+          <div class="campo-oculto" aria-hidden="true">
+            <label for="website">Não preencha este campo</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="btn btn-verde" type="submit">Enviar mensagem</button>
+          <p class="form-retorno" id="form-retorno" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="container rodape-grid">
+
+      <div class="rodape-col">
+        <div class="rodape-marca">
+          <img class="rodape-logo" src="logo-rsv.png" alt="Logo RSV Consultoria">
+        </div>
+        <p class="rodape-nome" id="rodape-nome"></p>
+        <p>Consultoria naval, marítima e portuária com excelência técnica.</p>
+      </div>
+
+      <div class="rodape-col">
+        <h4>Navegação</h4>
+        <a class="rodape-link" href="#servicos">Serviços</a>
+        <a class="rodape-link" href="#missao">Missão e visão</a>
+        <a class="rodape-link" href="#valores">Valores</a>
+        <a class="rodape-link" href="#sobre">Sobre</a>
+        <a class="rodape-link" href="#curso">Curso</a>
+        <a class="rodape-link" href="#contato">Contato</a>
+      </div>
+
+      <div class="rodape-col">
+        <h4>Contato</h4>
+        <div id="rodape-whats"></div>
+        <a class="rodape-link" id="rodape-email"></a>
+      </div>
+
+      <div class="rodape-col">
+        <h4>Redes sociais</h4>
+        <div class="redes" id="rodape-redes"></div>
+      </div>
+
+    </div>
+
+    <div class="container rodape-base">
+      <p class="credito">&copy; 2026 RSV Consultoria Naval, Marítima e Portuária. Todos os direitos reservados.</p>
+      <p class="credito">Site desenvolvido por <span>Agência Lisboa Digital</span></p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <a class="whats-flutuante" id="whats-flutuante" target="_blank" rel="noopener">WhatsApp</a>
+
+  <script src="conteudo.js"></script>
+  <script src="script.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"55d6c902a8a143b1ab6c5051b2a1f75b","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

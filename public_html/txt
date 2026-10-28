@@ -1,0 +1,29 @@
+# RSV CONSULTORIA - CONFIGURAÇÕES DO SERVIDOR
+
+# Página inicial
+DirectoryIndex index.html
+
+# Não listar o conteúdo das pastas
+Options -Indexes
+
+# Forçar HTTPS: ative somente depois de confirmar que o SSL está ativo no domínio.
+# Remova o # das linhas abaixo para ativar.
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+# Cabeçalhos de segurança básicos
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Cache de arquivos estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+</IfModule>
