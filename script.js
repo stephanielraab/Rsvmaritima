@@ -221,6 +221,15 @@
         });
     });
   }
+    /* ---------- FORMAÇÃO DO COMANDANTE ---------- */
+  function renderFormacao() {
+    if (!C.sobre.formacao || !C.sobre.formacao.length) return;
+    var ul = criarEl('ul', 'sobre-formacao');
+    C.sobre.formacao.forEach(function (f) { ul.appendChild(criarEl('li', '', f)); });
+    $('sobre-texto').insertAdjacentElement('afterend', ul);
+  }
+
+
 
   /* ---------- INÍCIO ---------- */
   preencherTextos();
@@ -233,4 +242,5 @@
   iniciarMenu();
   iniciarFormulario();
   iniciarAnimacoes();
+  renderFormacao();
 })();

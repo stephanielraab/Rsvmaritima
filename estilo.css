@@ -460,3 +460,22 @@ p { margin: 0 0 1em; }
   }
 }
 
+/* AJUSTES: SEM CHAMADA SUPERIOR NO TOPO, FOTO CENTRALIZADA NO CELULAR, FORMAÇÃO */
+#hero-kicker { display: none !important; }
+
+.sobre-formacao { margin: 16px 0 20px; padding-left: 20px; list-style: disc; color: var(--azul); }
+.sobre-formacao li { margin-bottom: 6px; }
+
+@media (max-width: 900px) {
+  #sobre-foto {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;
+    transform: none;
+  }
+  #sobre-foto::before,
+  #sobre-foto::after { content: none; display: none; }
+}
+

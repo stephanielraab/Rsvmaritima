@@ -14,7 +14,7 @@ window.CONTEUDO = {
 
   /* 2. TOPO E CHAMADA PRINCIPAL (HERO) */
   hero: {
-    kicker: "Capitão de longo curso · Consultoria Naval e Marítima",
+    kicker: "",
     titulo: "Consultoria Naval, Marítima e Portuária com Excelência Técnica",
     texto: "Manobras portuárias, Segurança operacional, Engenharia naval e Treinamentos para embarcações, Portos e Operações Offshore.",
     mensagemWhatsApp: "Olá! Vim pelo site da RSV e gostaria de falar sobre os serviços."
@@ -49,7 +49,14 @@ window.CONTEUDO = {
     foto: "images/ricardo-vieira.jpg",
     fotoAlt: "Comandante Ricardo Silva Vieira, capitão de longo curso",
     nome: "Comandante Ricardo Silva Vieira",
-    texto: "Capitão de longo curso, atua em consultoria naval e marítima, manobras portuárias, segurança operacional e treinamentos."
+    texto: "Comandante de Navio com 15 anos de experiência em operações marítimas de cabotagem, longo curso, offshore e manobras portuárias. Sólida atuação em gestão de equipes, segurança da navegação e conformidade com normas marítimas nacionais e internacionais. Experiência como comandante e operador de posicionamento dinâmico sênior (SDPO) em embarcações MPSV, Fluideiro, OSRV, AHTS, Graneleiro e Petroleiro, além de atuação como Gerente de Porto, Gerente de Navegação e Capitão de Manobra. Perfil técnico e estratégico, com forte liderança, comunicação não violenta, dinamismo e elevada capacidade de tomada de decisão e resolução de conflitos, sempre focado em segurança, eficiência operacional e resultados.",
+    formacao: [
+      "Capitão de Longo",
+      "Engenheiro Mecânico",
+      "Engenheiro de Segurança do Trabalho",
+      "Mestre em Engenharia Naval",
+      "Licenciatura em Matemática"
+    ]
   },
 
   /* 6. MISSÃO E VISÃO */
